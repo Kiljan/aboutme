@@ -6,6 +6,8 @@ body{
 
 p {
   margin: 1em 0;
+  text-align: left;
+  font-size: 1.875em;
 }
 
 img {
