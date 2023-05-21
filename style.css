@@ -59,7 +59,6 @@ li {
 .main_text_item_left {
   display: flex;
   align-items: center;
-  justify-content: center;
   color: #FFFFFF;
   background-color: #1d1e24;
   width: 70%;
@@ -73,7 +72,6 @@ li {
 .main_text_item_right {
   display: flex;
   align-items: center;
-  justify-content: center;
   color: #FFFFFF;
   background-color: #1d1e24;
   width: 70%;
