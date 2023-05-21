@@ -9,16 +9,20 @@ body{
 }
 
 h2 {
-  font-size: 150%;
+  font-size: 200%;
   color: #FFFFFF;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid brown;
 }
 
 p {
   margin: 1em 0;
-  text-align: left;
   font-size: 100%;
   color:#FFFFFF;
-  float: right;
+  float: center;
   margin-right: 2%;
 }
 
@@ -44,13 +48,21 @@ li {
   margin-bottom: 0.5em;
 }
 
+.small_img img {
+  height: 4%;
+  width: 4%;
+  border: 1px solid #1f232e;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+
 .main_text_item_left {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
   background-color: #1d1e24;
-  width: 75%;
+  width: 70%;
   margin-top: 1%;
   padding: 0.5%;
   border-radius: 0.3%;
@@ -64,7 +76,7 @@ li {
   justify-content: center;
   color: #FFFFFF;
   background-color: #1d1e24;
-  width: 75%;
+  width: 70%;
   margin-top: 1%;
   padding: 0.5%;
   border-radius: 0.3%;
@@ -73,4 +85,26 @@ li {
   float: right;
   margin-bottom: 1%;
   margin-right: 2%;
+}
+
+.main_text_item_pol {
+  display: flex;
+  color: #FFFFFF;
+  background-color: #1d1e24;
+  width: 95%;
+  margin-top: 1%;
+  padding: 0.5%;
+  border-radius: 0.3%;
+  min-height: 4%;
+  float: left;
+}
+
+.main_text_item_ll {
+  width: 95%;
+  margin-top: 1%;
+  padding: 0.5%;
+  border-radius: 0.3%;
+  min-height: 4%;
+  float: center;
+  text-align: center;
 }
