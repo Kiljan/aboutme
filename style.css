@@ -6,7 +6,7 @@ body{
   color: #FFFFFF;
   background-image: url('assets/images/wall.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: scroll; 
   background-size: cover;
 }
 
@@ -19,8 +19,8 @@ li.nostyle {
 }
 
 .header_img img {
-  height: 13em;
-  width: 13em;
+  height: 11em;
+  width: 11em;
   border: 1px solid #1f232e;
   border-radius: 50%;
   margin-bottom: 0.5em;
