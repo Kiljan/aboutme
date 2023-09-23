@@ -1,17 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 1em;
   padding: 3em;
   width: auto;
-  text-align: left;
+  display: grid;
   color: #FFFFFF;
+  text-align: left;
   background-image: url('assets/images/wall.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
+  overflow-y: hidden;
+}
+
+.header_img {
+  font-size: x-large;
 }
 
 .container {
-  font-size: x-large;
+  font-size: large;
+  position: static;
+  margin:4px, 4px;
+  padding:4px;
+  width: 80%;
+  height: 80%;
+  overflow-x: auto;
+  overflow-y: auto;
+  text-align:justify;
+}
+
+.main_text_item {
+  color: #FFFFFF;
+  margin-top: 1em;
+  min-height: 6em;
 }
 
 li.nostyle {
@@ -26,9 +50,4 @@ li.nostyle {
   margin-bottom: 0.5em;
 }
 
-.main_text_item {
-  color: #FFFFFF;
-  margin-top: 1em;
-  min-height: 6em;
-}
 
