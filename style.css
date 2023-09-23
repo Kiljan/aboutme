@@ -10,6 +10,10 @@ body{
   background-size: cover;
 }
 
+a{
+  color: #FFFFFF;
+}
+
 .container {
   font-size: x-large;
 }
@@ -32,3 +36,11 @@ li.nostyle {
   min-height: 6em;
 }
 
+.header_logo img {
+  display: inline;
+  height: 3em;
+  width: 3em;
+  border: 1px solid #1f232e;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
