@@ -19,19 +19,22 @@ a{
 }
 
 li.nostyle {
-  list-style-type: none;
+  list-style-type: square;
 }
 
 .header_img img {
   height: 13em;
   width: 13em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #1f232e;
   border-radius: 50%;
   margin-bottom: 0.5em;
 }
 
 .main_text_item {
-  color: #FFFFFF;
+  color: #dedede;
   margin-top: 1em;
   min-height: 6em;
 }
