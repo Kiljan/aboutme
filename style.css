@@ -3,7 +3,7 @@ body{
   padding: 3em;
   width: auto;
   text-align: left;
-  color: #FFFFFF;
+  color: #eae4f2;
   background-image: url('assets/images/wall.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed; 
@@ -11,7 +11,11 @@ body{
 }
 
 a{
-  color: #FFFFFF;
+  color: #eae4f2;
+}
+
+b{
+  color: #48b802;
 }
 
 .container {
@@ -34,7 +38,7 @@ li.nostyle {
 }
 
 .main_text_item {
-  color: #dedede;
+  color: #eae4f2;
   margin-top: 1em;
   min-height: 6em;
 }
