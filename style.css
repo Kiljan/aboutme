@@ -1,103 +1,163 @@
-body{
-  margin: 0em;
+/* --- GLOBAL --- */
+body {
+  margin: 0;
   padding: 3em;
-  width: auto;
-  text-align: left;
   color: #eae4f2;
+  font-family: "Lato", sans-serif;
   background-image: url('assets/images/wall.jpg');
   background-repeat: no-repeat;
-  font-family: "Lato", sans-serif;
-  height: auto;
   background-position: center;
   background-size: cover;
+  backdrop-filter: blur(2px);
 }
 
-a{
-  color: #eae4f2;
+/* Links */
+a {
+  color: #9fdcff;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
-b{
+a:hover {
   color: #ffffff;
 }
 
-.container {
-  font-size: x-large;
+/* Highlighted text */
+b {
+  color: #48b802;
 }
 
+/* Main container */
+.container {
+  font-size: 1.2rem;
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* --- LISTS --- */
 li.nostyle {
   list-style-type: square;
+  margin-left: 1.2em;
+  line-height: 1.5em;
 }
 
+/* --- HEADER IMAGE --- */
 .header_img img {
   height: 13em;
   width: 13em;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #1f232e;
+  margin: 0 auto 0.8em auto;
+  border: 2px solid #2b2f3a;
   border-radius: 50%;
-  margin-bottom: 0.5em;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
 }
 
+/* --- SECTION BLOCKS --- */
 .main_text_item {
-  color: #eae4f2;
-  margin-top: 1em;
-  min-height: 6em;
+  margin-top: 2em;
+  padding: 1.2em;
+  background: rgba(20, 20, 20, 0.55);
+  border-left: 4px solid #48b802;
+  border-radius: 8px;
+  line-height: 1.6em;
 }
 
+/* --- SOCIAL ICONS --- */
 .header_logo img {
-  display: inline;
   height: 3em;
   width: 3em;
-  border: 1px solid #1f232e;
+  border: 2px solid #2b2f3a;
   border-radius: 50%;
-  margin-bottom: 0.5em;
+  margin: 0.5em;
+  transition: 0.2s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
+.header_logo img:hover {
+  transform: scale(1.1);
+  border-color: #48b802;
+}
+
+/* --- SIDENAV (if you use it) --- */
 .sidenav {
   height: 100%;
   width: 160px;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
+  background-color: rgba(10, 10, 10, 0.9);
   padding-top: 20px;
+  backdrop-filter: blur(4px);
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  padding: 10px 16px;
+  font-size: 20px;
+  color: #b8b8b8;
   display: block;
+  transition: 0.2s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #ffffff;
+  background: rgba(255,255,255,0.05);
 }
 
+/* --- MAIN CONTENT WHEN SIDENAV IS USED --- */
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  margin-left: 160px;
+  font-size: 1.4rem;
+  padding: 0 10px;
 }
 
 .main li {
   list-style-type: square;
 }
 
+/* --- CODE BLOCKS --- */
 .codeSample {
-  background-color: darkblue;
-  width: auto;
-  border: 1px solid green;
-  padding: 25px;
-  margin: 10px;
+  background-color: #0a0f2a;
+  border: 1px solid #48b802;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-family: monospace;
+  overflow-x: auto;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* --- RESPONSIVE --- */
+@media screen and (max-width: 900px) {
+  body {
+    padding: 1em;
+  }
+
+  .container {
+    padding: 1.5em;
+  }
+
+  .sidenav {
+    width: 120px;
+  }
+
+  .main {
+    margin-left: 120px;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  .sidenav {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .container {
+    font-size: 1rem;
+  }
+}
